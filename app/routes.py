@@ -13,8 +13,6 @@ NEXMO_PRIVATE_KEY = os.environ['NEXMO_PRIVATE_KEY']
 TEST_PHONE = os.environ['TEST_PHONE']
 number_to_call = TEST_PHONE
 
-app = Flask(__name__)
-
 app.secret_key = os.environ['FLASK_SECRET_KEY']
 
 @app.route('/', methods=['GET', 'POST'])
